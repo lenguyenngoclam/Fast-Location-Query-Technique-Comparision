@@ -1,0 +1,6 @@
+CREATE TABLE  `GeoLocation` (
+	`id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+	  `name` VARCHAR(100), 
+	  `position` POINT NOT NULL SRID 4326, 
+	  SPATIAL INDEX(`position`)
+);
